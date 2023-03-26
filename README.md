@@ -1,10 +1,11 @@
 [![@nuxtjs/supabase](./docs/public/cover.jpg)](https://supabase.nuxtjs.org)
 
-# @nuxtjs/supabase
+# Nuxt Supabase
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
+[![Nuxt][nuxt-src]][nuxt-href]
 [![Volta][volta-src]][volta-href]
 
 > [Supabase](https://supabase.com) module for [Nuxt](https://v3.nuxtjs.org)
@@ -58,6 +59,9 @@ If you are looking for a solution with Nuxt 2, checkout https://github.com/supab
 
 [license-src]: https://img.shields.io/npm/l/@nuxtjs/supabase.svg?style=flat&colorA=18181B&colorB=28CF8D
 [license-href]: https://npmjs.com/package/@nuxtjs/supabase
+
+[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
+[nuxt-href]: https://nuxt.com
 
 [volta-src]: https://user-images.githubusercontent.com/904724/209143798-32345f6c-3cf8-4e06-9659-f4ace4a6acde.svg
 [volta-href]: https://volta.net/nuxt-modules/supabase?utm_source=readme_nuxt_supabase

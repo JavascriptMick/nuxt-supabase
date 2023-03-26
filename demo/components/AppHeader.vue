@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const router = useRouter()
-const client = useSupabaseClient()
+const client = useSupabaseAuthClient()
 const user = useSupabaseUser()
 const colorMode = useColorMode()
 
@@ -12,6 +11,7 @@ const colorModeIcon = computed(() => colorMode.preference === 'dark' ? 'heroicon
 
 const logout = async () => {
   await client.auth.signOut()
+  navigateTo('/')
 }
 </script>
 
@@ -24,7 +24,7 @@ const logout = async () => {
           label="Source"
           variant="transparent"
           target="_blank"
-          to="https://github.com/nuxt-community/supabase-module/tree/main/demo"
+          to="https://github.com/nuxt-modules/supabase/tree/main/demo"
           icon="heroicons-outline:external-link"
         />
         <UButton

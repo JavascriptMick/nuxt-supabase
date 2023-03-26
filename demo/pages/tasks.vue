@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { Task } from '~/types/tasks'
+import { Database } from '~~/types/database.types'
 
 definePageMeta({
   middleware: 'auth'
 })
 
-const client = useSupabaseClient()
+const client = useSupabaseClient<Database>()
 const user = useSupabaseUser()
-const loading = ref(null)
+const loading = ref(false)
 const newTask = ref('')
 
 const { data: tasks } = await useAsyncData('tasks', async () => {
